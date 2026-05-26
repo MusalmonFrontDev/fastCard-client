@@ -10,6 +10,7 @@ export interface Product {
   reviewsCount?: number;
   productImages?: { image: string }[] | string;
   image?: string;
+  images?: string[];
   categoryId: number;
   hasDiscount?: boolean;
   discountPrice?: number;

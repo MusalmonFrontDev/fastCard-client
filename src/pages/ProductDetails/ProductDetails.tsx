@@ -78,9 +78,7 @@ export default function ProductDetails() {
     currentPrice = product.discountPrice < product.price ? product.discountPrice : product.price;
   }
 
-  const handleAddToCart = () => {
-    dispatch(addToCart({ product, quantity }));
-  };
+
 
   const handleBuyNow = () => {
     dispatch(addToCart({ product, quantity }));

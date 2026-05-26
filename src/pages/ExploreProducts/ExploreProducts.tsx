@@ -429,10 +429,10 @@ export default function ExploreProducts(): ReactNode {
                   className="flex items-center gap-2.5 text-left text-sm text-gray-600 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-colors cursor-pointer"
                 >
                   <div className="flex gap-0.5">
-                    {'★'.repeat(stars).split('').map((s, i) => (
+                    {'★'.repeat(stars).split('').map((_s, i) => (
                       <span key={i} className="text-yellow-500 text-[15px]">★</span>
                     ))}
-                    {'☆'.repeat(5 - stars).split('').map((s, i) => (
+                    {'☆'.repeat(5 - stars).split('').map((_s, i) => (
                       <span key={i} className="text-gray-300 dark:text-zinc-650 text-[15px]">☆</span>
                     ))}
                   </div>

@@ -230,7 +230,7 @@ export default function Cart() {
                 </div>
                 <div className="flex justify-between text-sm pb-4 border-b border-gray-100 dark:border-zinc-800">
                   <span className="text-gray-600 dark:text-zinc-400">{t('cart_shipping')}</span>
-                  <span className="font-semibold text-emerald-500">{shipping === 0 ? t('cart_free') : `$${shipping.toFixed(2)}`}</span>
+                  <span className="font-semibold text-emerald-500">{Number(shipping) === 0 ? t('cart_free') : `$${Number(shipping).toFixed(2)}`}</span>
                 </div>
                 <div className="flex justify-between text-base font-bold pb-6">
                   <span>{t('cart_total')}</span>
